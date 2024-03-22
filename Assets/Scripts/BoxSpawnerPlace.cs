@@ -23,6 +23,7 @@ public class BoxSpawnerPlace : MonoBehaviour
         // Espera el tiempo de intervalo antes de activar la capacidad de spawnear
         yield return new WaitForSeconds(spawnInterval);
         Spawn();
+            count++;
              }
     }
 
