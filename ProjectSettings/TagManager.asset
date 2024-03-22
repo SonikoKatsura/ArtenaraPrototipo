@@ -6,6 +6,7 @@ TagManager:
   tags:
   - RoomLight
   - SamplesInfoPanel
+  - Game
   layers:
   - Default
   - TransparentFX

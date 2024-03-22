@@ -29,34 +29,19 @@ public class InteractionHandlerScript : MonoBehaviour,
         }
 
         if (eventData.MixedRealityInputAction.Description == "Select") {
-            Debug.Log("Funciona");
-            gameObject.GetComponent<SimpleCollectibleScript>().Collect();
-            /*if (gameObject.tag == "Menu")
-            {
-                SceneManager.LoadScene("Main");
+            Debug.Log("Funciona");            
+
+            switch (gameObject.tag) {
+                case "Menu": SceneManager.LoadScene("Main"); break;
+                case "Intro": SceneManager.LoadScene("Intro"); break;
+                case "Game": SceneManager.LoadScene("Game"); break;
+                case "Exit": Application.Quit(); break;
+                case "Credits": SceneManager.LoadScene("Credits"); break;
+                case "Item":
+                    gameObject.GetComponent<SimpleCollectibleScript>().Collect();
+                    break;
+                //default:  break;
             }
-            else if (gameObject.tag == "Sky")
-            {
-                Debug.Log("Sky");
-                SceneManager.LoadScene("Skybox");
-            }
-            else if(gameObject.tag == "Timelapse")
-            {
-                SceneManager.LoadScene("Video_timelapse");
-            }
-            else if(gameObject.tag == "Credits")
-            {
-                SceneManager.LoadScene("Credits");
-            }
-            else if (gameObject.tag == "Video") {
-                Debug.Log("Video");
-                SceneManager.LoadScene("Video_canteras");
-            }
-            else if (gameObject.tag == "Matterport") {
-                Debug.Log("Matterport");
-                Application.OpenURL("https://my.matterport.com/show/?m=KWP67Z6gwTb");
-                Application.Quit();
-            }*/
         }
     }
 
