@@ -48,7 +48,7 @@ public class SimpleCollectibleScript : MonoBehaviour {
 
             SCManager.instance.LoadScene("MainMenu");
 
-            Debug.Log("Do NoType Command");
+            Debug.Log("Door");
         }
         if (CollectibleType == CollectibleTypes.Type2) {
 
