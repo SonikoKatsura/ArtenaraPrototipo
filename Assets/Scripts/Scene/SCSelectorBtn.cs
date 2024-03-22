@@ -5,9 +5,9 @@ public class SCSelectorBtn : MonoBehaviour {
 
     public void MainMenu() {
         SCManager.instance.LoadScene("MainMenu");
-        AudioManager.instance.PlayMusic("ManiMenu");
+        //AudioManager.instance.PlayMusic("ManiMenu");
     }
-    public void OpenCredits() {
+    public void Credits() {
         SCManager.instance.LoadScene("Credits");
     }
 

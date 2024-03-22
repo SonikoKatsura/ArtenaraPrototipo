@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class SimpleCollectibleScript : MonoBehaviour {
 
-    public enum CollectibleTypes { NoType, Type1, Type2, Type3, Type4, Type5 }; // you can replace this with your own labels for the types of collectibles in your game!
+    public enum CollectibleTypes { NoType, Door, Type2, Type3, Type4, Type5 }; // you can replace this with your own labels for the types of collectibles in your game!
     public CollectibleTypes CollectibleType; // this gameObject's type
     public bool rotate; // do you want it to rotate?
     public float rotationSpeed;
@@ -44,9 +44,9 @@ public class SimpleCollectibleScript : MonoBehaviour {
 
             Debug.Log("Do NoType Command");
         }
-        if (CollectibleType == CollectibleTypes.Type1) {
+        if (CollectibleType == CollectibleTypes.Door) {
 
-            //Add in code here;
+            SCManager.instance.LoadScene("MainMenu");
 
             Debug.Log("Do NoType Command");
         }

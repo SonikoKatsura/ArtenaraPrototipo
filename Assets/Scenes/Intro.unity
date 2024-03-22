@@ -132,7 +132,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 204815106}
-  - component: {fileID: 204815105}
   - component: {fileID: 204815104}
   m_Layer: 0
   m_Name: SCManager
@@ -151,18 +150,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4329e9b7b5a9cfc4aa7f7b26ebdf6ef5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &204815105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 204815103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abff5fd574de4924eb2972d67731cf39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &204815106
@@ -251,7 +238,7 @@ PrefabInstance:
     - target: {fileID: 102000010767390410, guid: 2d145caa42b44bd42aac79a42eba3d7c, type: 3}
       propertyPath: m_Text
       value: "Bienvenido a Artenara\n\xA1\xA1\xA1Nos invaden!!!\nIntenta sobrevivir
-        a la oleada"
+        a la oleada\nRecolecta tantos objetos como puedas"
       objectReference: {fileID: 0}
     - target: {fileID: 102000010767390410, guid: 2d145caa42b44bd42aac79a42eba3d7c, type: 3}
       propertyPath: m_Color.rgba
