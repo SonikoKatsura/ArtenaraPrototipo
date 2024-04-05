@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 using Unity.AI.Navigation;
-using UnityEditor.PackageManager;
+//using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;

@@ -32,11 +32,12 @@ public class InteractionHandlerScript : MonoBehaviour,
             Debug.Log("Funciona");            
 
             switch (gameObject.tag) {
-                case "Menu": SceneManager.LoadScene("Main"); break;
+                case "Menu": SceneManager.LoadScene("MainMenu"); break;
                 case "Intro": SceneManager.LoadScene("Intro"); break;
                 case "Game": SceneManager.LoadScene("Game"); break;
                 case "Exit": Application.Quit(); break;
                 case "Credits": SceneManager.LoadScene("Credits"); break;
+                case "Door": SceneManager.LoadScene("MainMenu"); break;
                 case "Item":
                     gameObject.GetComponent<SimpleCollectibleScript>().Collect();
                     break;

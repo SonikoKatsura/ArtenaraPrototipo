@@ -7,6 +7,8 @@ TagManager:
   - RoomLight
   - SamplesInfoPanel
   - Game
+  - Door
+  - Item
   layers:
   - Default
   - TransparentFX
