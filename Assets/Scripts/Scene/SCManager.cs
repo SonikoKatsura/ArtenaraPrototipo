@@ -32,7 +32,9 @@ public class SCManager : MonoBehaviour {
 
     // Método para cargar una nueva escena por nombre
     public void LoadScene(string sceneName) {
+        float fog = RenderSettings.fogDensity;
         SceneManager.LoadScene(sceneName);  // Carga la nueva escena y quita la anterior (lo mismo que LoadSceneMode.Single)
+        RenderSettings.fogDensity = fog;
     }
 
     // Método para cargar una nueva escena por nombre Sin Quitar la actual
