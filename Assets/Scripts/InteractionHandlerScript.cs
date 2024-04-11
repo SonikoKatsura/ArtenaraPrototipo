@@ -7,6 +7,11 @@ public class InteractionHandlerScript : MonoBehaviour,
     IMixedRealityInputActionHandler,
     IMixedRealityFocusHandler
 {
+
+    //EVENTO (DELEGADO)   --> Aumenta la cantidad de Gemas recogidas
+    public delegate void GemCollected();
+    public static event GemCollected onGemCollected;  //(EVENTO)
+
     private bool isFocused = false;
 
     private void OnEnable()
@@ -37,9 +42,12 @@ public class InteractionHandlerScript : MonoBehaviour,
                 case "Game": SceneManager.LoadScene("Game"); break;
                 case "Exit": Application.Quit(); break;
                 case "Credits": SceneManager.LoadScene("Credits"); break;
-                case "Door": SceneManager.LoadScene("MainMenu"); break;
+                case "Door": SceneManager.LoadScene("WinScene"); break;
                 case "Item":
                     gameObject.GetComponent<SimpleCollectibleScript>().Collect();
+                    //Evento Aumenta la cantidad de Gemas recogidas
+                    if (onGemCollected != null)
+                        onGemCollected();
                     break;
                 //default:  break;
             }
