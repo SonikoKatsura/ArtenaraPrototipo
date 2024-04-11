@@ -31,12 +31,12 @@ MonoBehaviour:
   mouseLookToggle: 0
   isControllerLookInverted: 1
   cameraOriginOffset: {x: 0, y: 0, z: 0}
-  currentControlMode: 0
+  currentControlMode: 1
   fastControlKey:
     bindingType: 2
     code: 303
-  controlSlowSpeed: 1
-  controlFastSpeed: 5
+  controlSlowSpeed: 15
+  controlFastSpeed: 25
   moveHorizontal: Horizontal
   moveVertical: Vertical
   moveUpDown: UpDown
