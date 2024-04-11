@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4668159706249536832}
   - component: {fileID: 432400406063094034}
   - component: {fileID: 6447277357963156307}
+  - component: {fileID: 2526363673867626477}
   m_Layer: 0
   m_Name: Gem
   m_TagString: Item
@@ -233,3 +234,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8452dafedb4049459d7efd20dfa19ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2526363673867626477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4635943698727549468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84b570673553caa4e8dd8632956b2e9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverDistance: 0.5
+  hoverSpeed: 2

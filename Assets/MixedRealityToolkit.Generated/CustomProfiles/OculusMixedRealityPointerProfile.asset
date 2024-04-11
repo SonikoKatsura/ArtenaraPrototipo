@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: OculusMixedRealityPointerProfile
   m_EditorClassIdentifier: 
   isCustomProfile: 1
-  pointingExtent: 1000
+  pointingExtent: 25
   pointingRaycastLayerMasks:
   - serializedVersion: 2
     m_Bits: 4294967291

@@ -18,8 +18,8 @@ public class Hover : MonoBehaviour
         float localHeight = (float)Mathf.Sin(Time.time * hoverSpeed) * hoverDistance;
         //transform.localPosition.y = localHeight;
 
-        Vector3 newPosition = transform.localPosition;
+        Vector3 newPosition = transform.position;
         newPosition.y = localHeight; 
-        transform.localPosition = newPosition;
+        transform.position = newPosition;
     }
 }
