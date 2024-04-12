@@ -19,7 +19,7 @@ public class FogControl : MonoBehaviour {
     }
 
     public void OnSliderChange() {
-        float fog = pinchSlider.SliderValue / 10;
+        float fog = pinchSlider.SliderValue / 100;
         RenderSettings.fogDensity = fog;
 
         //Evento Fog value

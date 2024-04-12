@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Roberto_y_Ruben
-  productName: HolaMundoMRTK
+  productName: artenara
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -143,8 +143,6 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 11400000, guid: 5efa02f9dd59e98449561cdb1998d9ce, type: 2}
-  - {fileID: -8122402864665230076, guid: d0429b9022312754eb8465afac278467, type: 2}
-  - {fileID: 11400000, guid: ccb4c9696532927448c02751f87afb2f, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
