@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour {
 
     void Update() {
         DoorWin.active = showDoor;
+        brokenDoor.active = !showDoor;
     }
 
     private void TextGemsLeft() {
