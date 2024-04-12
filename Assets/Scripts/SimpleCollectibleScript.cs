@@ -42,37 +42,37 @@ public class SimpleCollectibleScript : MonoBehaviour {
 
             //Add in code here;
 
-            Debug.Log("Do NoType Command");
+            //Debug.Log("Do NoType Command");
         }
         if (CollectibleType == CollectibleTypes.Door) {
 
             SCManager.instance.LoadScene("MainMenu");
 
-            Debug.Log("Door");
+            //Debug.Log("Door");
         }
         if (CollectibleType == CollectibleTypes.Type2) {
 
             //Add in code here;
 
-            Debug.Log("Do NoType Command");
+            //Debug.Log("Do NoType Command");
         }
         if (CollectibleType == CollectibleTypes.Type3) {
 
             //Add in code here;
 
-            Debug.Log("Do NoType Command");
+            //Debug.Log("Do NoType Command");
         }
         if (CollectibleType == CollectibleTypes.Type4) {
 
             //Add in code here;
 
-            Debug.Log("Do NoType Command");
+            //Debug.Log("Do NoType Command");
         }
         if (CollectibleType == CollectibleTypes.Type5) {
 
             //Add in code here;
 
-            Debug.Log("Do NoType Command");
+            //Debug.Log("Do NoType Command");
         }
 
         Destroy(gameObject);

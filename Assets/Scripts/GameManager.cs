@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour {
     }
     private void OnCollectedGem() {
         _gemsCollected++;
-        Debug.Log("Gemas recogidas: " + _gemsCollected);
+        //Debug.Log("Gemas recogidas: " + _gemsCollected);
 
         // Actualiza el texto de gemas faltantes
         TextGemsLeft();

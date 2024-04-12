@@ -101,7 +101,7 @@ public class EnemyPatrol: MonoBehaviour
         }
         //and then turn them back to a Vector3
         Vector3 pointOnMesh = a + r * (b - a) + s * (c - a);
-        Debug.Log(pointOnMesh);
+        //Debug.Log(pointOnMesh);
         return pointOnMesh;
   
 
