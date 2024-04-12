@@ -11,6 +11,9 @@ public class InteractionHandlerScript : MonoBehaviour,
     //EVENTO (DELEGADO)   --> Aumenta la cantidad de Gemas recogidas
     public delegate void GemCollected();
     public static event GemCollected onGemCollected;  //(EVENTO)
+    //EVENTO (DELEGADO)   --> Muestra el texto al tocar la puerta rota
+    public delegate void BrokenDoor();
+    public static event BrokenDoor onBrokenDoor;  //(EVENTO)
 
     private bool isFocused = false;
 
@@ -34,7 +37,7 @@ public class InteractionHandlerScript : MonoBehaviour,
         }
 
         if (eventData.MixedRealityInputAction.Description == "Select") {
-            Debug.Log("Funciona");            
+            //Debug.Log("Funciona");            
 
             switch (gameObject.tag) {
                 case "Menu": SceneManager.LoadScene("MainMenu"); break;
@@ -43,6 +46,11 @@ public class InteractionHandlerScript : MonoBehaviour,
                 case "Exit": Application.Quit(); break;
                 case "Credits": SceneManager.LoadScene("Credits"); break;
                 case "Door": SceneManager.LoadScene("WinScene"); break;
+                case "BrokenDoor":
+                    //Evento Aumenta la cantidad de Gemas recogidas
+                    if (onBrokenDoor != null)
+                        onBrokenDoor();
+                    break;
                 case "Item":
                     gameObject.GetComponent<SimpleCollectibleScript>().Collect();
                     //Evento Aumenta la cantidad de Gemas recogidas
