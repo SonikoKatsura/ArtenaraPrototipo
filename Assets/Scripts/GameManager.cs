@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour {
     [SerializeField] GameObject DoorWin;
     [SerializeField] GameObject brokenDoor;
     [SerializeField] GameObject panelBrokenDoor;
+    [SerializeField] List<GameObject> ItemList;
 
     [SerializeField] float showinPanelTime = 5f;
 
@@ -59,6 +60,8 @@ public class GameManager : MonoBehaviour {
 
         // Actualiza el texto de gemas faltantes
         TextGemsLeft();
+
+        ItemList[_gemsCollected].SetActive(true);
 
         CheckWin();
     }
