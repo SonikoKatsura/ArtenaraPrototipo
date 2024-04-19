@@ -10,6 +10,7 @@ public class VoiceControlMRTK : MonoBehaviour {
     public static event FogValue OnFogValue;
 
     public void LowFog() {
+        Debug.Log("LowFog");
         float fog = 0.2f;
 
         //Evento Fog value
@@ -17,6 +18,7 @@ public class VoiceControlMRTK : MonoBehaviour {
             OnFogValue(fog);
     }
     public void MiddleFog() {
+        Debug.Log("MiddleFog");
         float fog = 0.5f;
 
         //Evento Fog value
@@ -24,6 +26,7 @@ public class VoiceControlMRTK : MonoBehaviour {
             OnFogValue(fog);
     }
     public void MaxFog() {
+        Debug.Log("MaxFog");
         float fog = 1;
 
         //Evento Fog value

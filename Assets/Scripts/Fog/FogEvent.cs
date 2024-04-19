@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 // ---------------------------------------------------------------------------------
@@ -32,12 +33,12 @@ public class FogEvent : MonoBehaviour {
     // Nos suscribimos al evento cuando se habilita el objeto ScoreManager
     private void OnEnable() {
         FogControl.OnFogValue += GetFogValue; // Suscribirse al evento
-        VoiceControlMRTK.OnFogValue += GetFogValue;
+        VoiceControlMRTK.OnFogValue += GetSetFogValue;
     }
     // Nos damos de baja del evento cuando se deshabilita el objeto ScoreManager
     private void OnDisable() {
         FogControl.OnFogValue -= GetFogValue; // Baja del evento
-        VoiceControlMRTK.OnFogValue -= GetFogValue;
+        VoiceControlMRTK.OnFogValue -= GetSetFogValue;
     }
 
     public void GetFogValue(float fog) {
@@ -47,5 +48,10 @@ public class FogEvent : MonoBehaviour {
     public void SetFogValue() {
         RenderSettings.fog = true;
         RenderSettings.fogDensity = fogValue;
+    }
+
+    private void GetSetFogValue(float fog) {
+        GetFogValue(fog/100);
+        SetFogValue();
     }
 }
