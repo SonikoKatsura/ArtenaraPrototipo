@@ -6,7 +6,6 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-using Meta.WitAi.Requests;
 using System;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -33,10 +32,5 @@ namespace Meta.WitAi.Events
         [FormerlySerializedAs("OnValidatePartialResponse")] [SerializeField]
         private WitValidationEvent _onValidatePartialResponse = new WitValidationEvent();
         public WitValidationEvent OnValidatePartialResponse => _onValidatePartialResponse;
-
-        public void AddListener(Action<VoiceServiceRequest> onVoiceTranscription)
-        {
-            throw new NotImplementedException();
-        }
     }
  }
