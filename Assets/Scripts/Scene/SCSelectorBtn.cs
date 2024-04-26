@@ -8,14 +8,20 @@ public class SCSelectorBtn : MonoBehaviour {
         //AudioManager.instance.PlayMusic("ManiMenu");
     }
     public void Credits() {
-        // SCManager.instance.LoadScene("Credits");
         SCManager.instance.LoadScene("Credits");
     }
 
     public void Exit() {
         Application.Quit();
     }
-
+    public void Voice()
+    {
+        SCManager.instance.LoadScene("Voice");
+    }
+    public void VoiceWit()
+    {
+        SCManager.instance.LoadScene("Voice-Wit");
+    }
     public void Intro() {
         SCManager.instance.LoadScene("Intro");
         Debug.Log("Intro");

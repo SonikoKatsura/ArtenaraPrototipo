@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.01287473, g: 0.03192364, b: 0.07500872, a: 1}
+  m_IndirectSpecularColor: {r: 0.012874329, g: 0.03200212, b: 0.0751276, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -512,6 +512,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 918827605}
+  - component: {fileID: 918827606}
   m_Layer: 0
   m_Name: Response Handler
   m_TagString: Untagged
@@ -534,6 +535,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1453043569}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &918827606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918827604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 591c3d6f017c11b4faa41506d75635b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Voice: {fileID: 1453043568}
+  ValidateEarly: 0
+  intent: volver
+  confidenceThreshold: 0.6
+  valueMatchers:
+  - path: intents[0].name
+    witValueReference: {fileID: 0}
+    contentRequired: 1
+    matchMethod: 0
+    comparisonMethod: 0
+    matchValue: 
+    floatingPointComparisonTolerance: 0.00009999999747378752
+    allowConfidenceOverlap: 0
+    confidenceRanges: []
+  formattedValueEvents: []
+  onMultiValueEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 204815103}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onDidNotMatch:
+    m_PersistentCalls:
+      m_Calls: []
+  onOutOfDomain:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1139314077
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,7 +1062,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1453043569}
   - component: {fileID: 1453043568}
-  - component: {fileID: 1453043567}
   - component: {fileID: 1453043566}
   m_Layer: 0
   m_Name: App Voice Experience
@@ -1034,54 +1082,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 922ad917dccdd5a4c9e778618a46763f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1453043567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1453043565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 591c3d6f017c11b4faa41506d75635b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Voice: {fileID: 1453043568}
-  ValidateEarly: 0
-  intent: return_menu
-  confidenceThreshold: 0.6
-  valueMatchers:
-  - path: intents[0].name
-    witValueReference: {fileID: 0}
-    contentRequired: 1
-    matchMethod: 0
-    comparisonMethod: 0
-    matchValue: 
-    floatingPointComparisonTolerance: 0.00009999999747378752
-    allowConfidenceOverlap: 0
-    confidenceRanges: []
-  formattedValueEvents: []
-  onMultiValueEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 204815104}
-        m_TargetAssemblyTypeName: SCSelectorBtn, Assembly-CSharp
-        m_MethodName: MainMenu
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onDidNotMatch:
-    m_PersistentCalls:
-      m_Calls: []
-  onOutOfDomain:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1453043568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1172,7 +1172,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   witRuntimeConfiguration:
-    witConfiguration: {fileID: 11400000, guid: 9be53d9fcfa4a524b840caec824a13e4, type: 2}
+    witConfiguration: {fileID: 11400000, guid: 45ba57f792b9e8f4b8c67c7aaf38d5c4, type: 2}
     minKeepAliveVolume: 0.0005
     minKeepAliveTimeInSeconds: 2
     minTranscriptionKeepAliveTimeInSeconds: 1
@@ -1201,50 +1201,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 918827605}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1469914480
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1469914482}
-  - component: {fileID: 1469914481}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1469914481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1469914480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6f5ae0f76ced714088f62c81a8ade84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1469914482
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1469914480}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1631888093
@@ -1617,5 +1573,4 @@ SceneRoots:
   - {fileID: 320306681}
   - {fileID: 1725223235}
   - {fileID: 204815106}
-  - {fileID: 1469914482}
   - {fileID: 1453043569}
