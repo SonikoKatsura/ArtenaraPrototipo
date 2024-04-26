@@ -370,6 +370,83 @@ Transform:
   - {fileID: 522941313}
   m_Father: {fileID: 1350658888}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &121025105
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6198637007046774381, guid: 049773c662d6a5b48bce96cc7b156db9, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6198637007222701802, guid: 049773c662d6a5b48bce96cc7b156db9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a581b6a45fd767d41a4d21be252aa51c, type: 2}
+    - target: {fileID: 6198637007299960911, guid: 049773c662d6a5b48bce96cc7b156db9, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6198637007595054231, guid: 049773c662d6a5b48bce96cc7b156db9, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6198637007932516587, guid: 049773c662d6a5b48bce96cc7b156db9, type: 3}
+      propertyPath: trackedHandedness
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6198637007932516589, guid: 049773c662d6a5b48bce96cc7b156db9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5694803
+      objectReference: {fileID: 0}
+    - target: {fileID: 6198637007932516589, guid: 049773c662d6a5b48bce96cc7b156db9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 216.05765
+      objectReference: {fileID: 0}
+    - target: {fileID: 6198637007932516589, guid: 049773c662d6a5b48bce96cc7b156db9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.2257
+      objectReference: {fileID: 0}
+    - target: {fileID: 6198637007932516589, guid: 049773c662d6a5b48bce96cc7b156db9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6198637007932516589, guid: 049773c662d6a5b48bce96cc7b156db9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6198637007932516589, guid: 049773c662d6a5b48bce96cc7b156db9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6198637007932516589, guid: 049773c662d6a5b48bce96cc7b156db9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6198637007932516589, guid: 049773c662d6a5b48bce96cc7b156db9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6198637007932516589, guid: 049773c662d6a5b48bce96cc7b156db9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6198637007932516589, guid: 049773c662d6a5b48bce96cc7b156db9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6198637007932516590, guid: 049773c662d6a5b48bce96cc7b156db9, type: 3}
+      propertyPath: m_Name
+      value: HandMenu_Small Variant - right
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 049773c662d6a5b48bce96cc7b156db9, type: 3}
 --- !u!4 &129328644 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5601080504398891984, guid: 30549365518b3af46a7b0dbca06088d0, type: 3}
@@ -1206,9 +1283,13 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6198637007932516587, guid: 049773c662d6a5b48bce96cc7b156db9, type: 3}
+      propertyPath: trackedHandedness
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6198637007932516589, guid: 049773c662d6a5b48bce96cc7b156db9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5694803
+      value: -1.6052
       objectReference: {fileID: 0}
     - target: {fileID: 6198637007932516589, guid: 049773c662d6a5b48bce96cc7b156db9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1248,7 +1329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6198637007932516590, guid: 049773c662d6a5b48bce96cc7b156db9, type: 3}
       propertyPath: m_Name
-      value: HandMenu_Small Variant
+      value: HandMenu_Small Variant - left
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7105,4 +7186,5 @@ SceneRoots:
   - {fileID: 1210352985}
   - {fileID: 1994699880}
   - {fileID: 420522317}
+  - {fileID: 121025105}
   - {fileID: 1410100432}
