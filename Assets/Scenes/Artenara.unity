@@ -6172,7 +6172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 752759ac55263614db2b668414cd9a57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToInstantiate: {fileID: 6698613874191733222, guid: 010dae05e84724e459e3ecc10269c99c, type: 3}
+  objectToInstantiate: {fileID: 6698613874191733222, guid: 0a89afe79f584c641a4236849d8052e6, type: 3}
 --- !u!4 &1947967247
 Transform:
   m_ObjectHideFlags: 0
