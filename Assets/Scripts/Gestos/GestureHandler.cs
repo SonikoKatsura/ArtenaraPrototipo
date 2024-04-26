@@ -27,7 +27,7 @@ public class GestureHandler : MonoBehaviour, IMixedRealityGestureHandler<Vector3
 
 
     public void OnGestureStarted(InputEventData eventData) {
-        Debug.Log("GestureStarted");
+        Debug.Log("Gesture Started");
         throw new System.NotImplementedException();
     }
 
@@ -40,10 +40,11 @@ public class GestureHandler : MonoBehaviour, IMixedRealityGestureHandler<Vector3
     }
 
     public void OnGestureCompleted(InputEventData<Vector3> eventData) {
+        Debug.Log("Gesture Completed");
         // Verifica si el gesto completado es el que estás buscando
         //if (eventData.MixedRealityInputAction.Description == "TuGestoEspecifico") {
-            // Instancia el objeto en la posición del gesto completado
-            Instantiate(objectToInstantiate, eventData.InputData, Quaternion.identity);
+        // Instancia el objeto en la posición del gesto completado
+        Instantiate(objectToInstantiate, eventData.InputData, Quaternion.identity);
         //}
     }
 
